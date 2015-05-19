@@ -5,7 +5,7 @@ es_deb_url="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearc
 es_yml_file_loc="/etc/elasticsearch/elasticsearch.yml"
 
 if [ !-f "$es_deb_file" ] then
-  wget $es_deb_url;
+  wget $es_deb_url
 fi
 
 #dpkg -i elasticsearch-0.90.7.deb
