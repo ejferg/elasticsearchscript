@@ -1,4 +1,5 @@
-cd /
-curl -OL -k https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.5.2.zip
-unzip elasticsearch-0.18.7.zip
-mv elasticsearch-0.18.7 /usr/local/elasticsearch
+wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-0.90.7.deb
+dpkg -i elasticsearch-0.90.7.deb
+rm -r /etc/elasticsearch/elasticsearch.yml
+mv elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
+service elasticsearch restart
