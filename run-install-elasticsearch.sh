@@ -5,12 +5,12 @@ es_deb_url="https://download.elastic.co/elasticsearch/elasticsearch/elasticsearc
 es_yml_file_loc="/etc/elasticsearch/elasticsearch.yml"
 
 if [ ! -f $es_deb_file ]; then
-  echo "Downloading elasticsearch"
-  #wget $es_deb_url
+  wget $es_deb_url
 fi
 
-if sudo service --status-all | grep "ejferg"; then
+if sudo service --status-all | grep "elasticsearch"; then
     echo "service is installed"
+    #Todo: uninstall elasticsearch
 fi
 
 #dpkg -i $es_deb_file
