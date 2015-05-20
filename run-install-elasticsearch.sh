@@ -9,7 +9,7 @@ if [ ! -f $es_deb_file ]; then
   #wget $es_deb_url
 fi
 
-if sudo service --status-all | grep "elasticsearch"; then
+if sudo service --status-all | grep "ejferg"; then
     echo "service is installed"
 fi
 
