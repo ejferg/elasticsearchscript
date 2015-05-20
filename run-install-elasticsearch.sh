@@ -17,5 +17,5 @@ fi
 
 dpkg -i $es_deb_file
 sudo rm -r $es_yml_file_loc
-sudo mv elasticsearch.yml $es_yml_file_loc
+sudo mv ./elasticsearch.yml $es_yml_file_loc
 sudo service elasticsearch restart
