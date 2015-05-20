@@ -9,6 +9,6 @@ if [ ! -f $es_deb_file ]; then
 fi
 
 dpkg -i $es_deb_file
-rm -r $es_yml_file_loc
-mv elasticsearch.yml $es_yml_file_loc
-service elasticsearch restart
+#rm -r $es_yml_file_loc
+#mv elasticsearch.yml $es_yml_file_loc
+#service elasticsearch restart
